@@ -17,7 +17,6 @@ btnMenu.onclick = function () {
 
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
-    stagePadding: 50,
     loop:true,
     margin:100,
     items:1,
