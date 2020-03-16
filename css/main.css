@@ -7,6 +7,7 @@
 
 body {
   height: 5000px;
+  font-family: 'Open sans', sans-serif;
 }
 
 ul {
@@ -532,6 +533,8 @@ header .header_area .header_area_bottom .mobile_menu .mega_menu ul li ul {
 
 .testmonial_area {
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -541,9 +544,10 @@ header .header_area .header_area_bottom .mobile_menu .mega_menu ul li ul {
 }
 
 .testmonial_area .testmonial_content .owl-item .testmonial_info {
-  background-color: #f1f1f159;
-  padding: 60px 80px 85px 80px;
+  -webkit-box-shadow: 0px 16px 35px 0px rgba(0, 0, 2, 0.08);
+          box-shadow: 0px 16px 35px 0px rgba(0, 0, 2, 0.08);
   border-radius: 10px;
+  padding: 60px 80px 85px 80px;
 }
 
 @media (max-width: 767px) {
@@ -592,9 +596,14 @@ header .header_area .header_area_bottom .mobile_menu .mega_menu ul li ul {
   line-height: 35px;
 }
 
+.testmonial_area .owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: visible;
+}
+
 .testmonial_area .owl-carousel .owl-nav,
 .testmonial_area .owl-carousel .owl-dots {
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -797,139 +806,6 @@ header .header_area .header_area_bottom .mobile_menu .mega_menu ul li ul {
 
 .footer_area .footer_widget .sociale_links ul li a:hover {
   color: #eb592d !important;
-}
-
-.about_us {
-  padding-top: 73px;
-  padding-bottom: 24px;
-}
-
-@media (max-width: 767px) {
-  .about_us {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-.about_us .about_us_area .cate_img img {
-  width: 100%;
-}
-
-.about_us .about_us_area .cate_info .buttons {
-  background-image: -webkit-linear-gradient(0deg, #f14437 0%, #ed5b0d 99%);
-  color: #fff;
-}
-
-.adopt_us {
-  padding-bottom: 90px;
-  padding-top: 125px;
-}
-
-@media (max-width: 767px) {
-  .adopt_us {
-    padding: 60px 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .adopt_us .adopt_us_area .head_title {
-    padding-bottom: 60px;
-  }
-}
-
-.adopt_us .adopt_us_area .head_title .buttons {
-  background-image: -webkit-linear-gradient(0deg, #f14437 0%, #ed5b0d 99%);
-  color: #fff;
-}
-
-.adopt_us .adopt_us_area .adopt_counter .adopt_info {
-  margin-bottom: 40px;
-  -webkit-box-shadow: 0px 16px 35px 0px rgba(0, 0, 2, 0.08);
-          box-shadow: 0px 16px 35px 0px rgba(0, 0, 2, 0.08);
-  border-radius: 14px;
-  background: #fff;
-  padding: 40px 40px 33px 40px;
-}
-
-.adopt_us .adopt_us_area .adopt_counter .adopt_info h3 {
-  font-size: 60px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  color: #383737;
-  display: inline-block;
-  margin-bottom: 2px;
-  margin-top: 22px;
-  line-height: 1;
-}
-
-.adopt_us .adopt_us_area .adopt_counter .adopt_info p {
-  font-size: 20px;
-  color: #808080;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  display: block;
-  margin-bottom: 0;
-}
-
-.services_area {
-  padding-top: 240px;
-  padding-bottom: 120px;
-}
-
-@media (max-width: 767px) {
-  .services_area {
-    padding: 60px 0;
-  }
-}
-
-.services_area .services_content .head_title {
-  margin-bottom: 90px;
-}
-
-.services_area .services_content .head_title p {
-  font-size: 16px;
-  line-height: 30px;
-  color: #909092;
-  font-weight: 400;
-}
-
-.services_area .services_content .services_info {
-  padding: 70px 25px 65px 25px;
-  border: 1px solid #ffc5c2;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.services_area .services_content .services_info:hover {
-  -webkit-box-shadow: 0px 16px 35px 0px rgba(0, 0, 2, 0.08);
-          box-shadow: 0px 16px 35px 0px rgba(0, 0, 2, 0.08);
-  border: 1px solid transparent;
-}
-
-.services_area .services_content .services_info .services_img {
-  background-image: url("../images/service_icon_bg_1.png");
-  height: 140px;
-  width: 160px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin: auto;
-}
-
-.services_area .services_content .services_info .services_text h3 {
-  font-size: 25px;
-  font-weight: 600;
-  margin-top: 43px;
-  margin-bottom: 22px;
-}
-
-.services_area .services_content .services_info .services_text p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #909092;
-  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
