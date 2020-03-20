@@ -1,31 +1,16 @@
-let openMenu = document.querySelector('.mega_menu'),
-    btnMenu = document.querySelector('.btn_menu');
+/*
+  website Name: anipat
 
-btnMenu.onclick = function () {
-  if (openMenu.style.maxHeight){
-  openMenu.style.maxHeight = null;
-} else {
-  openMenu.style.maxHeight = '350px';
-}
+  auther: Mohaemd Abdelkader
 
-}
-// $(function () {
-//   $('.btn_menu').on('click', function () {
-//     $('.mega_menu').slideToggle();
-//   });
-// });
+  contact Us : mohamedabdelkader.fed@gmail.com
+*/
 
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:100,
-    items:1,
-    autoplay:true,
-    autoplayHoverPause: true,
-    autoplaySpeed: 800,
-  });
-});
+/*
+==========================================================================*/
 
+
+/*sticky Navbar in top when scrolling*/
 
 var myNav = document.querySelector('.header_area_bottom');
 
@@ -38,6 +23,26 @@ window.onscroll = function () {
   }
 }
 
+/*
+=====================================================*/
+
+/* Open menu and close when press click on menu icon */
+
+let openMenu = document.querySelector('.mega_menu'),
+    btnMenu = document.querySelector('.btn_menu');
+
+btnMenu.onclick = function () {
+  if (openMenu.style.maxHeight){
+  openMenu.style.maxHeight = null;
+  } else {
+  openMenu.style.maxHeight = '350px';
+  }
+}
+
+/*
+=====================================================*/
+
+/* accordin link*/
 
 var mobileDrop = document.getElementsByClassName('mobile_drop'),
     i;
@@ -51,3 +56,19 @@ for (i = 0; i < mobileDrop.length; i++) {
   }
   });
 }
+
+
+/*
+=====================================================*/
+/*code owlCarousel*/
+
+$(document).ready(function (){
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:100,
+    items:1,
+    autoplay:true,
+    autoplayHoverPause: true,
+    autoplaySpeed: 800,
+  });
+});
